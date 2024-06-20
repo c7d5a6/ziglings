@@ -124,14 +124,14 @@ pub fn main() !void {
     print("\n", .{});
 
     // Now the actual table. (Is there anything more beautiful
-    // than a well-formatted table?)
+    // than a well-forma3tted table?)
     for (0..size) |a| {
         print("{d:>2} |", .{a + 1});
 
         for (0..size) |b| {
             // What formatting is needed here to make our columns
             // nice and straight?
-            print("{???} ", .{(a + 1) * (b + 1)});
+            print("{d:>3} ", .{(a + 1) * (b + 1)});
         }
 
         // After each row we use double line feed:
